@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class Funnybtn {
  inputValue: string = '';
-  buttonStyle = {
+ // ye is ki initial positon bta rha hai k butn ki position kha hai is waqt
+  buttonStyle = {  
     position: 'relative',
     left: '0px',
     top: '0px'
