@@ -1,0 +1,51 @@
+
+<div >
+<fieldset>
+<legend><h1>List Create</h1></legend>
+<ul>
+    <li> Create list of any items with their prices </li>
+    <li> Show items and add textbox & button to add them </li>
+    <li> on Add create object items with quantity and price </li>
+    <li> if item already added increment quantity </li>
+    <li> use for lop on list to Display cart items in table </li>
+ 
+</ul>
+<input type="text" [(ngModel)]="nameI" name="nameI" placeholder="Enter your item name">
+<input type="text" [(ngModel)]="quantityI"  name="quantityI" placeholder="Enter your item quantity">
+<input type="text" [(ngModel)]="priceI" name="priceI" placeholder="how much gonna buy">
+<button (click)="add()"> Add</button>
+<hr>
+<!-- table -->
+<table class="item-table">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Check Item</th>
+      <th>Item Name</th>
+      <th>Item Quantity</th>
+      <th>Item Price</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let list of lists; let i = index" >
+      <td>{{i+1}}</td>
+      <td><input type="checkbox"  /></td>
+      <td>{{list.name}}</td>
+      <td>{{list.quantity}}</td>
+      <td>{{list.price}}</td>
+      <td>
+        <div class="action-buttons">
+          <button class="update" >Update</button>
+          <button class="delet" (click)="del(i)" >Delete</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  
+</fieldset>
+
+
+
+</div>
