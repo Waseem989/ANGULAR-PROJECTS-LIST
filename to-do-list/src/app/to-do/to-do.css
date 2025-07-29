@@ -1,0 +1,115 @@
+
+.todo-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+
+}
+h2{
+  justify-content: center;
+  display: flex;
+}
+
+.add-task {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.add-task button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-list span {
+  flex: 1;
+}
+
+.task-list button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+
+.inputt{
+  display:flex;
+  justify-content: center;
+}
+.savebt{
+  background-color: #4CAF50;
+  border-radius: 10px;
+  height: 45px;
+  width :100px;
+  color: aliceblue;
+  margin-left: 10px;
+  border-style: none;
+}
+.inputt input{
+  height: 4opx;
+  width: 400px;
+  border-radius: 10px;
+  border-color: #a8a6a6;
+ 
+}
+.savebt:hover{
+  background-color: #48a84b;
+  cursor: pointer;
+}
+
+.ul li{
+  display: flex;
+  justify-content: space-between;
+
+}
+.dl{
+  height: 30px;
+  width: 60px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f34c40;
+  color: aliceblue;
+  display: flex;
+  align-self: center;
+  justify-self: right;
+
+}

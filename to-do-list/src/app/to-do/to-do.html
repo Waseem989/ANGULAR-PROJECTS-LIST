@@ -1,0 +1,56 @@
+
+<!-- Main container for the todo list -->
+<div class="todo-container">
+  <h2>Todo List 1</h2>
+
+  <!-- Input aur Add button -->
+  <div class="add-task">
+    
+    <!-- Jab user kuch likhe aur enter dabaye ya button click kare to task add ho -->
+    <input type="text"  [(ngModel)]="newTask" placeholder="Add a new task" > <!-- Enter dabane se task add hoga -->
+      <!-- [ngmodel] Two-way binding: jo likhoge, wo variable me chala jayega -->
+      
+    <button (click)="addTask()">Add</button> <!-- Button se bhi task add hoga -->
+  </div>
+
+  <!-- Task list start -->
+  <ul class="task-list">
+    <!-- Sabhi tasks ko loop se dikhaya ja raha hai -->
+    <li *ngFor="let todo of todos" >
+      
+      <!-- Checkbox task complete karne ke liye -->
+      <input  type="checkbox"  >
+
+      <!-- Task ka naam show ho raha hai -->
+      <span>{{ todo.task }}</span>
+
+      <!-- Delete button -->
+      <button (click)="deleteTask(todo.id)">Delete</button>
+    </li>
+  </ul>
+
+  <!-- Jab koi task na ho to ye message show hoga -->
+  <div *ngIf="todos.length === 0" class="empty-message">
+    No tasks yet. Add one above!
+  </div>
+</div>
+
+
+<!--new to do-->
+<div class="todo-container">
+  <h1>ToDo list maker 2</h1>
+  <div class="inputt">
+  <input type="text" [(ngModel)]="task">
+  <button class="savebt" (click)="addt()">Save</button> 
+  </div>
+
+  <ul class="ul">
+    <li *ngFor="let tt of todoo">
+    <h3>{{ tt.task }}</h3>
+    <button class="dl" (click)="del()"> Delete</button>
+    </li>
+    
+  </ul>
+
+
+</div>
