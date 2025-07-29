@@ -1,0 +1,31 @@
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1{
+    color: darkgoldenrod;
+    font-weight: bolder;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+margin-bottom: 25px;
+    border-color: antiquewhite;
+}
+button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+
+    background-color: darkorange;
+}
+button:hover{
+    background-color: rgb(204, 156, 36);
+}
+
